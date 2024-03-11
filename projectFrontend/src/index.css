@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Plus+Jakarta+Sans&family=Questrial&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Questrial", sans-serif;
+}
+/* --------------------------------------------------- */
+/* Camera page */
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(223, 223, 223);
+}
+.cameraContainer {
+  width: 60%;
+  position: relative;
+  z-index: 9;
+}
+.everyThing {
+  width: 80%;
+  /* height: 70%; */
+  display: flex;
+  justify-content: center;
+}
+.info {
+  font-weight: bold;
+  padding: 5px 5px;
+}
+.webCam {
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  padding-right: 29px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  border-bottom-right-radius: 40px;
+  box-shadow: -10px 30px 70px rgba(0, 0, 0, 0.1);
+}
+.webCam video {
+  border-radius: 10px;
+  width: 100%;
+  z-index: 6;
+}
+.errorMsg {
+  z-index: 8;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: red;
+  height: 0px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.errorMsg.errVisible {
+  opacity: 1;
+  height: 10px;
+}
+.errorMsg.hidden {
+  opacity: 0;
+  height: 0;
+}
+.btnContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.btn {
+  width: 110px;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.cartBtnContainer {
+  width: 70px;
+  /* text-align: center; */
+  padding: 10px;
+}
+.cartBtn {
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.btn:hover {
+  background-color: rgb(37, 37, 37);
+  transform: scale(1.02);
+}
+.cartBtn:hover {
+  color: rgb(37, 37, 37);
+  transform: scale(1.02);
+}
+
+.backLink {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  top: 30px;
+  left: -46px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in;
+}
+.backLink:hover {
+  color: rgb(37, 37, 37);
+  transform: scale(1.02);
+}
+.cartSection {
+  /* z-index: 2; */
+  width: 0%;
+  margin: 15px;
+  margin-top: 28px;
+  display: flex;
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: all 0.5s ease-in-out;
+}
+.cartSection.visible {
+  opacity: 0.9;
+  transform: translateX(0);
+  width: 30%;
+}
+.cartId {
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+.items {
+  width: 94%;
+
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  flex: 1;
+  background-color: white;
+  overflow: "auto";
+  box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border-bottom-right-radius: 30px;
+}
+.obj {
+  margin: 5px 0px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.objTotal {
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  padding-bottom: 10px;
+}
+.checkout-btn {
+  width: 110px;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  box-shadow: 0px 5px 70px rgba(0, 0, 0, 0.3);
+}
+.checkout-btn:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+/* ------------------------------------------------------- */
+/* Home page  */
+
+.home {
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  border-radius: 15px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 10px 30px 70px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.blinking-underscore {
+  font-size: 120px;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content {
+  text-align: right;
+  width: 100%;
+  flex: 1;
+}
+.startBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  width: 100%;
+}
+.startBtn {
+  width: 210px;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.startBtn:hover {
+  width: 250px;
+}
+.link {
+  text-decoration: none;
+}
+.scanner {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Black with 50% opacity */
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.scannerContainer {
+  width: 40%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 10px 30px 70px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.idForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputId {
+  border: none;
+  border-radius: 15px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+/* ----------------------------------------------------------------------------- */
+.checkoutSection {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  width: 0%;
+  background-color: white;
+  border-radius: 15px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: -10px;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-500px);
+}
+.checkoutSection.visible {
+  opacity: 1;
+  transform: translateX(0);
+  width: 100%;
+}
+.qrCodeModal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: grey; */
+}
+.qr {
+  padding: 20px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border-bottom-right-radius: 30px;
+}
+.closeCheckoutBtnAndCryptoBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cryptoBtn {
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+  cursor: pointer;
+}
+/* ----------------------------------------------------- */
+.cryptoSection {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  width: 0%;
+  background-color: white;
+  border-radius: 15px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: -10px;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-500px);
+}
+.cryptoSection.visible {
+  opacity: 1;
+  transform: translateX(0);
+  width: 100%;
+}
+.checkoutInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.smallInfo {
+  color: grey;
+  padding: 4px;
+}
+.cryptoQr {
+  background-color: black;
+}
+.transactionBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cancelBtn {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doneBtn {
+  padding: 10px;
+}

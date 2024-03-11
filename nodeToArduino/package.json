@@ -1,0 +1,21 @@
+{
+  "name": "nodetoarduino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arduino.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ataberkylmz/hx711": "^0.1.6",
+    "@serialport/parser-readline": "^12.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "johnny-five": "^2.1.0",
+    "keypress": "^0.2.1",
+    "serialport": "^12.0.0",
+    "socket.io": "^4.7.4"
+  }
+}
