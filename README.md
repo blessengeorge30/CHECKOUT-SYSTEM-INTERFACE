@@ -1,6 +1,5 @@
 
 ## React Checkout System Interface
-## Overview 💻
 
 A modern and responsive checkout system interface developed using React. The interface is designed to provide a seamless and user-friendly experience for users during the checkout process.
 
