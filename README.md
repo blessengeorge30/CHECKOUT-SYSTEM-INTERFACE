@@ -20,9 +20,9 @@ A modern and responsive checkout system interface developed using React. The int
 
 ## Overview 💻
 
-![App Screenshot](./screenshots/OVERVIEW.png)
+![App Screenshot](./screenshots/OVERVIEW.jpeg)
 
-![App Screenshot](./screenshots/overview2.png)
+![App Screenshot](./screenshots/OVERVIEW2.png)
 
 
 
