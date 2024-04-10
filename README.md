@@ -12,12 +12,17 @@ A modern and responsive checkout system interface developed using React. The int
 - Quantity Adjustment: Ability to dynamically adjust product quantities directly from the checkout interface.
 - Total Calculation: Automatic calculation of the total cost based on the selected products and quantities.
 
-## Screenshots 
+## UI Screenshots 
 
 ![App Screenshot](./screenshots/overview.png)
 
 ![App Screenshot](./screenshots/overview1.png)
 
+## Overview 💻
+
+![App Screenshot](./screenshots/OVERVIEW.png)
+
+![App Screenshot](./screenshots/overview2.png)
 
 
 
